@@ -76,12 +76,12 @@ li:hover {
     left: 35%;
     transform: translate(-50%, -50%);
     text-align: left;
-    font-size: 25px;
+    font-size: 35px;
     font-family: sans-serif;
     color:#fff;
 }
 
-.contenido p {
+.contenido p { 
     font-size: 40px;
 }
 
