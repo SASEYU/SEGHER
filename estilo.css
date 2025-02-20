@@ -1,9 +1,7 @@
-
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -75,9 +73,9 @@ li:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Hace que el video cubra toda la pantalla */
+    object-fit: cover;
+    /* Hace que el video cubra toda la pantalla */
 }
-
 
 .contenido {
     position: relative;
@@ -85,7 +83,7 @@ li:hover {
     left: 55%;
     transform: translate(-50%, -50%);
     text-align: start;
-    color:#fff;
+    color: #fff;
     z-index: 1;
     font-family: sans-serif;
 }
@@ -94,41 +92,46 @@ li:hover {
     font-size: 60px;
 }
 
-.contenido p { 
+.contenido p {
     font-size: 35px;
 }
 
-
 /*MAIN*/
-
 main {
     display: flex;
     justify-content: center;
     padding: 20px;
 }
-.nosotros{
+
+.nosotros {
     display: flex;
     flex-direction: column;
     max-width: 1200px;
 }
 
 #nosotros {
-    scroll-margin-top: 140px; /* Ajusta según la altura del menú */
+    scroll-margin-top: 140px;
+    /* Ajusta según la altura del menú */
 }
-.derecha, .izquierda {
+
+.derecha,
+.izquierda {
     display: flex;
     align-items: center;
     gap: 25px;
     margin-bottom: 30px;
 }
 
-.derecha div, .izquierda div {
+.derecha div,
+.izquierda div {
     display: flex;
     flex-direction: column;
 }
+
 .derecha {
     flex-direction: row-reverse;
 }
+
 .izquierda {
     flex-direction: row;
 }
@@ -149,11 +152,13 @@ h3 {
     text-align: center;
     margin-top: 30px;
 }
-h2, h3{
+
+h2,
+h3 {
     font-family: sans-serif;
 }
 
-p{
+p {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -168,10 +173,6 @@ img {
 img:hover {
     transform: scale(1.1);
 }
-
-
-
-
 
 /*FOOTER*/
 footer {
@@ -194,12 +195,14 @@ footer {
 
 .contacto {
     position: absolute;
-    right: 20px; /* Lo coloca en el lado derecho */
-    bottom: 50px; /* Ajusta la distancia desde abajo */
+    right: 20px;
+    /* Lo coloca en el lado derecho */
+    bottom: 50px;
+    /* Ajusta la distancia desde abajo */
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 .contacto-num {
@@ -214,11 +217,12 @@ footer {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     z-index: 1000;
     box-shadow: none !important;
 }
+
 .copy {
     text-align: center;
 }
