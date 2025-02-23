@@ -54,6 +54,10 @@ header {
 
 }
 
+.menu-des {
+    background-color: #0077b6;
+}
+
 li:hover {
     color: #d9d9d9;
     text-decoration: underline;
@@ -226,37 +230,6 @@ footer {
 .copy {
     text-align: center;
 }
-
-
-/*SERVICIOS*/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.servicios {
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    height: 130px;
-    position: fixed; 
-    top: 0; 
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-
-}
-.servicios main{
-    padding-top: 140px;
-    }
-    
-    section {
-        border: 2px solid black;
-        padding: 20px;
-        margin: 20px;
-        font-family: sans-serif;
-    }
 
 
 
