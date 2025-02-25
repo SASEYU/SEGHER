@@ -153,6 +153,8 @@ main {
     align-items: center;
     gap: 25px;
     margin-bottom: 30px;
+    opacity: 0;
+    transform: translateX(100px);
 }
 
 .derecha div,
@@ -167,6 +169,12 @@ main {
 
 .izquierda {
     flex-direction: row;
+    transform: translateX(-100px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 h2 {
