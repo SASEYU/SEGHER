@@ -62,14 +62,13 @@ h2 {
 
 /*menu-despegable*/
 .menu-lista {
-    color: #fff;
     font-family: sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     list-style: none;
     position: absolute;
     top: 80px;
     right: 0;
-    background-color: #000;
+    background-color: #fff;
     width: 200px;
     display: none;
     flex-direction: column;
@@ -87,7 +86,7 @@ h2 {
 
 .menu-lista a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
 }
 
 .menu-lista li:hover {
