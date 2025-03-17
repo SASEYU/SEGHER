@@ -135,7 +135,7 @@ function compartir() {
         navigator.share({
             title: "Visita mi sitio web",
             text: "Mira esta página increíble",
-            url: "https://tupagina.com"
+            url: " https://saseyu.github.io/SEGHER/"
         }).then(() => console.log("Compartido con éxito"))
         .catch((error) => console.log("Error al compartir", error));
     } else {
