@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <nav class="menu">
+            <img class="logo" src="/imagenes/segher-logo.svg" alt="logo de la empresa">
+            <!--boton de hamburguesa-->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-controls="menu-lista"
+                aria-expanded="false">&#9776;</button>
+            <ul class="menu-lista" id="menu-lista">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="correo.html">Correo</a></li>
+                <li><a href="#contactanos">Contactanos</a></li>
+            </ul>
+        </nav>
+
+        <!--MAIN-->
+        <main>
+            <!--Formularios-->
+            <!--Registro-->
+            <div class="container">
+                <div class="form-container left form-left dynamic-content">
+                    <h2>Registro</h2>
+                    <form id="registro-form">
+                        <fieldset>
+                            <div class="formgeneral">
+                                <div>
+                                    <label for="tipoServicio">Tipo de Servicio:</label>
+                                    <select id="tipoServicio" name="tipoServicio">
+                                        <option value="SC">Servicio Courier</option>
+                                        <option value="ST">Servicio Terminal</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="modalidad">Modalidad:</label>
+                                    <select id="modalidad" name="modalidad">
+                                        <option value="Domicilio">Entrega Domicilio</option>
+                                        <option value="Oficina">Entrega Oficina</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="envio">Envío:</label>
+                                    <select id="envio" name="envio">
+                                        <option value="Sobre">Sobre</option>
+                                        <option value="Paquete">Paquete</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="formgeneral">
+                                <div>
+                                    <label for="largoenvio">Largo</label>
+                                    <input class="boxtext" type="text" id="largoenvio" name="largoenvio">
+                                </div>
+
+                                <div>
+                                    <label for="anchoenvio">Ancho</label>
+                                    <input type="text" id="anchoenvio" name="anchoenvio">
+                                </div>
+
+                                <div>
+                                    <label for="altoenvio">Alto</label>
+                                    <input type="text" id="altoenvio" name="anchoenvio">
+                                </div>
+
+                                <div>
+                                    <label for="pesoenvio">Peso</label>
+                                    <input type="text" id="pesoenvio" name="pesoenvio">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Datos del Remitente</legend>
+
+                            <div class="formgeneral">
+                                <div>
+                                    <label for="tipoDocEnvio">Tipo de Documento:</label>
+                                    <select id="tipoDocEnvio" name="tipoDocEnvio">
+                                        <option value="DNI">DNI</option>
+                                        <option value="RUC">RUC</option>
+                                        <option value="CE">CE</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="nombreEnvio">Nombre:</label>
+                                    <input type="text" id="nombreEnvio" name="nombreEnvio">
+                                </div>
+
+                                <div>
+                                    <label for="apellidoEnvio">Apellido:</label>
+                                    <input type="text" id="apellidoEnvio" name="apellidoEnvio">
+                                </div>
+
+                                <div>
+                                    <label for="direccionEnvio">Dirección:</label>
+                                    <input type="text" id="direccionEnvio" name="direccionEnvio">
+                                </div>
+
+                                <div>
+                                    <label for="referenciaEnvio">Referencia:</label>
+                                    <input type="text" id="referenciaEnvio" name="referenciaEnvio">
+                                </div>
+
+                                <div>
+                                    <label for="telefonoEnvio">Teléfono:</label>
+                                    <input type="tel" id="telefonoEnvio" name="telefonoEnvio">
+                                </div>
+
+                                <div>
+                                    <label for="emailEnvio">Email:</label>
+                                    <input type="email" id="emailEnvio" name="emailEnvio">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Datos del Destinatario</legend>
+                            <div class="formgeneral">
+                                <div>
+                                    <label for="tipoDocRecibe">Tipo de Documento:</label>
+                                    <select id="tipoDocRecibe" name="tipoDocRecibe">
+                                        <option value="DNI">DNI</option>
+                                        <option value="RUC">RUC</option>
+                                        <option value="CE">CE</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label for="nombreRecibe">Nombre:</label>
+                                    <input type="text" id="nombreRecibe" name="nombreRecibe">
+                                </div>
+
+                                <div>
+                                    <label for="apellidoRecibe">Apellido:</label>
+                                    <input type="text" id="apellidoRecibe" name="apellidoRecibe">
+                                </div>
+
+                                <div>
+                                    <label for="direccionRecibe">Dirección:</label>
+                                    <input type="text" id="direccionRecibe" name="direccionRecibe">
+                                </div>
+
+                                <div>
+                                    <label for="referenciaRecibe">Referencia:</label>
+                                    <input type="text" id="referenciaRecibe" name="referenciaRecibe">
+                                </div>
+
+                                <div>
+                                        <label for="telefonoRecibe">Teléfono:</label>
+                                        <input type="tel" id="telefonoRecibe" name="telefonoRecibe">
+                                    </div>
+
+                                    <div>
+                                        <label for="emailRecibe">Email:</label>
+                                        <input type="email" id="emailRecibe" name="emailRecibe">
+                                    </div>
+                                </div>
+                        </fieldset>
+
+                        <button type="button" onclick="generarCodigo()">Registrar</button>
+                        <div id="codigoGenerado"></div>
+                    </form>
+                </div>
+    
+                <!--Seguimiento-->
+                <div class="form-container right form-right dynamic-content">
+                    <h2>Consulta</h2>
+                    <form id="seguimiento-form">
+                        <label for="codigoSeguimiento">Ingresa el código:</label>
+                        <input type="text" id="codigoSeguimiento" name="codigoSeguimiento" required>
+                        <button type="button" onclick="buscarSeguimiento()">Buscar</button>
+                    </form>
+
+                    <h3>Detalles del Envío</h3>
+                    <p><strong>Remitente:</strong> <span id="nombreApellidoEnvioSeguimiento"></span></p>
+                    <p><strong>Dirección:</strong> <span id="direccionEnvioSeguimiento"></span></p>
+                    <p><strong>Teléfono:</strong> <span id="telefonoEnvioSeguimiento"></span></p>
+
+                    <p><strong>Destinatario:</strong> <span id="nombreApellidoEnvioSeguimiento"></span></p>
+                    <p><strong>Dirección:</strong> <span id="direccionEnvioSeguimiento"></span></p>
+                    <p><strong>Teléfono:</strong> <span id="telefonoEnvioSeguimiento"></span></p>
+
+                    <p><strong>Nombres y Apellidos:</strong> <span id="nombreApellidoRecibeSeguimiento"></span></p>
+                    <p><strong>Dirección:</strong> <span id="direccionRecibeSeguimiento"></span></p>
+                    <p><strong>Teléfono:</strong> <span id="telefonoRecibeSeguimiento"></span></p>
+
+                    <label for="estadoSeguimiento">Estado:</label>
+                    <select id="estadoSeguimiento" name="estadoSeguimiento">
+                        <option value="Almacen">Almacén</option>
+                        <option value="Proceso">Proceso</option>
+                        <option value="Entregado">Entregado</option>
+                        <option value="Rechazado">Rechazado</option>
+                    </select>
+
+                    <label for="evidenciaSeguimiento">Evidencia:</label>
+                    <input type="file" id="evidenciaSeguimiento" name="evidenciaSeguimiento">
+
+                    <label for="observacionesSeguimiento">Observaciones:</label>
+                    <textarea id="observacionesSeguimiento" name="observacionesSeguimiento"></textarea>
+
+                    <button type="submit">Limpiar</button>
+                </div>
+    
+            </div>
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+            <h2 id="contactanos">Contactanos</h2>
+            <div class="icons">
+                <a href="https://wa.me/51923223259" target="_blank" rel="noopener noreferrer">
+                    <img src="/imagenes/whatsapp_icon.png" alt="Whatsapp" width="45" height="45"></a>
+                <a href="correo.html">
+                <img src="/imagenes/correo-icon.png" alt="Correo" width="45" height="45" id="iconoCorreo"></a>
+                
+                <a href="https://www.facebook.com/profile.php?id=61567175664902" target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/facebook_icon.png" alt="Facebook" width="45" height="45"></a>
+
+                <a href="https://www.instagram.com/segherexpress/" target="_blank" rel="noopener noreferrer">  
+                <img src="/imagenes/instagram-icon.png" alt="Instagram" width="45" height="45"></a>
+
+                <img src="/imagenes/linkedin_icon.png" alt="Linkedin" width="45" height="45">
+                <a href="https://www.google.com/maps?q=-12.165858,-76.995403(Calle+Poseidon+Mz+A9+Lot+12+Urb+Sagitario+Surco+-+SEGHER)"
+                    target="_blank" rel="noopener noreferrer">
+                    <img src="/imagenes/ubicacion-icon.png" alt="Ubicacion" width="45" height="45"></a>
+            </div>
+
+            <div>
+                <a href="https://wa.me/51923223259" target="_blank" rel="noopener noreferrer">
+                    <img src="/imagenes/whatsapp_contac.png" alt="Flotante" width="65" height="65" class="flotante"></a>
+
+                    <button class="compartir" onclick="compartir()">Compartir</button>
+
+            </div>
+            <p class="copy">&copy; SEGHER 2025</p>
+
+
+<script src="script.js"></script>
+
+</body>
+
+
+
+</html>

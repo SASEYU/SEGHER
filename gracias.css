@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffff, #0b58bf);
+    color: #FEFEFE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal */
+.thank-you-container {
+    text-align: center;
+    background: #fff;
+    color: #000;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+/* Icono de éxito */
+.thank-you-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Botón de regreso */
+.btn-home {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #01104b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-home:hover {
+    background: #7d00c5;
+}

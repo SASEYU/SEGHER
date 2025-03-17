@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEGHER</title>
+    <link rel="stylesheet" href="correo.css">
+</head>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <nav class="menu">
+            <img class="logo" src="/imagenes/segher-logo.svg" alt="logo de la empresa">
+            <!--boton de hamburguesa-->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-controls="menu-lista"
+                aria-expanded="false">&#9776;</button>
+            <ul class="menu-lista" id="menu-lista">
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="formularios.html">Registro y Seguimiento</a></li>
+                <!--<li><a href="correo.html"></a>Correo</li>-->
+                <li><a href="#contactanos">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Correo-->
+        <div id="correo">
+            <div id="correo-contenedor">
+                <h2>Correo</h2>
+                <form id="correo" class="formulario" action="https://formsubmit.co/msegurash92@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false"> <!-- Desactiva la validación de captcha -->
+                    <input type="hidden" name="_next" value="https://saseyu.github.io/portafolio/gracias.html">
+                    <!-- Redirección tras envío -->
+
+                    <p>Estimado cliente, escríbeme para tus consultas y asesoría. </p>
+                    <p> Completa el siguiente formulario: </p>
+
+                    <label for="nombreCorreo">Nombre y Apellido:</label>
+                    <input type="text" id="nombreCorreo" name="nombreCorreo" required>
+
+                    <label for="emailCorreo">Email:</label>
+                    <input type="email" id="emailCorreo" name="emailCorreo" required>
+
+                    <label for="asuntoCorreo">Asunto:</label>
+                    <input type="text" id="asuntoCorreo" name="asuntoCorreo" required>
+
+                    <label for="mensajeCorreo">Mensaje:</label>
+                    <textarea id="mensajeCorreo" name="mensajeCorreo" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+        <h2 id="contactanos">Contactanos</h2>
+        <div class="icons">
+            <a href="https://wa.me/51923223259" target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/whatsapp_icon.png" alt="Whatsapp" width="45" height="45"></a>
+
+
+            <a href="https://www.facebook.com/profile.php?id=61567175664902" target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/facebook_icon.png" alt="Facebook" width="45" height="45"></a>
+
+            <a href="https://www.instagram.com/segherexpress/" target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/instagram-icon.png" alt="Instagram" width="45" height="45"></a>
+
+            <img src="/imagenes/linkedin_icon.png" alt="Linkedin" width="45" height="45">
+
+            <a href="https://www.google.com/maps?q=-12.165858,-76.995403(Calle+Poseidon+Mz+A9+Lot+12+Urb+Sagitario+Surco+-+SEGHER)"
+                target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/ubicacion-icon.png" alt="Ubicacion" width="45" height="45"></a>
+        </div>
+        <div>
+            <a href="https://wa.me/51923223259" target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/whatsapp_contac.png" alt="Flotante" width="65" height="65" class="flotante"></a>
+
+            <button class="compartir" onclick="compartir()">Compartir</button>
+
+        </div>
+        <p class="copy">&copy; SEGHER 2025</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

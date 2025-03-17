@@ -6,31 +6,31 @@
     <meta http-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEGHER</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <!--HEADER-->
     <header id="header">
-        <div class="menu">
-            <nav class="menu">
-                <img class="logo" src="./imagenes/segher-logo.svg" alt="logo">
-                <img src="./imagenes/menu-despegble.png" alt="menu-des" width="30" height="50" class="menu-des" id="menu-toggle">
-                <ul class="menu-lista" id="menu-lista">
-                    <li>Inicio</li>
-                    <li>Nosotros</li>
-                    <li>Servicios</li> 
-                    <li>Seguimiento</li>
-                    <li>Contactanos</li>
-                    <li>Ubicación</li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="menu">
+            <img class="logo" src="/imagenes/segher-logo.svg" alt="logo de la empresa">
+            <!--boton de hamburguesa-->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-controls="menu-lista"
+                aria-expanded="false">&#9776;</button>
+            <ul class="menu-lista" id="menu-lista">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="formularios.html">Registro y Consulta</a></li>
+                <li><a href="correo.html">Correo</a></li>
+                <li><a href="#contactanos">Contactanos</a></li>
+            </ul>
+        </nav>
+
         <div class="presentacion">
             <video autoplay muted loop id="videoFondo">
                 <source src="videos/paquetes.mp4" type="video/mp4">
             </video>
-            <div class="contenido">
+            <div class="contenido-video">
                 <h1>Tu impulso, nuestra misión. </h1>
                 <p>Más que un envío, una solución a tu medida.</p>
             </div>
@@ -39,97 +39,206 @@
 
     <!--MAIN-->
     <main>
-        <section>
-            <div class="nosotros">
-                <h2 id="nosotros">Nosotros</h2>
-                <div class="derecha">
-                    <img src="./imagenes/entrega.jpg" alt="foto1" class="imagen-derecha" width="450" height="310">
-                    <div>
-                        <h3>SEGHER, tu aliado local en soluciones de entrega</h3>
-                        <p>En <strong>SEGHER</strong>, estamos construyendo el futuro de la logística en Surco y zonas
-                            aledañas, un envío a la vez. Somos una empresa joven y dinámica, con raíces profundas en
-                            nuestra comunidad y un compromiso inquebrantable con la excelencia en cada entrega.</p>
-                    </div>
+        <section class="nosotros" aria-labelledby="titulo-nosotros">
+            <h2 class="hidden" id="nosotros">Nosotros</h2>
+
+            <article class="bloque bloque-texto-izquierda">
+                <div class="contenido">
+                    <h3 class="hidden">SEGHER, tu aliado local en soluciones de entrega</h3>
+                    <p class="hidden">En <strong>SEGHER</strong>, estamos construyendo el futuro de la logística en
+                        Surco y zonas
+                        aledañas, un envío a la vez. Somos una empresa joven y dinámica, con raíces profundas en nuestra
+                        comunidad y un compromiso inquebrantable con la excelencia en cada entrega.</p>
                 </div>
-                <div class="izquierda">
-                    <img src="./imagenes/foto2.webp" alt="foto2" class="imagen-izquierda" width="450" height="310">
-                    <div>
-                        <h3>Nuestra misión</h3>
-                        <p>Nuestra misión es cimentar relaciones de confianza inquebrantables, ofreciendo servicios
-                            transparentes y seguros que no solo cumplen, sino que superan las expectativas de nuestros
-                            clientes.</p>
-                    </div>
+                <img src="/imagenes/entrega.jpg" alt="Entrega de paquete" class="imagen hidden">
+            </article>
+
+            <article class="bloque bloque-imagen-izquierda">
+                <img src="/imagenes/foto2.webp" alt="Entregando caja" class="imagen hidden">
+                <div class="contenido">
+                    <h3 class="hidden">Nuestra misión</h3>
+                    <p class="hidden">Nuestra misión es cimentar relaciones de confianza inquebrantables, ofreciendo
+                        servicios
+                        transparentes y seguros que no solo cumplen, sino que superan las expectativas de nuestros
+                        clientes.</p>
+                    <h3 class="hidden">Nuestra visión</h3>
+                    <p>Nuestra visión es consolidarnos como la empresa de transporte y logística integral más confiable
+                        del país, ofreciendo soluciones personalizadas de alta calidad y construyendo relaciones
+                        duraderas con nuestros clientes.</p>
                 </div>
-                <div class="derecha">
-                    <img src="./imagenes/foto3.jpg" alt="foto3" class="imagen-derecha" width="450" height="310">
-                    <div>
-                        <h3>Nuestra visión</h3>
-                        <p>Nuestra visión es consolidarnos como la empresa de transporte y logística integral más
-                            confiable del país, ofreciendo soluciones personalizadas de alta calidad y construyendo
-                            relaciones duraderas con nuestros clientes.</p>
-                    </div>
+            </article>
+
+            <article class="bloque bloque-texto-izquierda">
+                <div class="contenido">
+                    <h3 class="hidden">Nuestro compromiso con lo humano, lo social y el ambiente</h3>
+                    <p class="hidden">En <strong>SEGHER</strong>, el éxito empresarial va de la mano con la
+                        responsabilidad social y
+                        ambiental. Nos esforzamos por construir una empresa que refleje los valores de nuestra
+                        comunidad:</p>
+                    <ul>
+                        <li class="hidden"><strong>Humano:</strong> Valoramos a nuestro equipo y clientes, fomentando un
+                            ambiente
+                            inclusivo y respetuoso.</li>
+                        <li class="hidden"><strong>Social:</strong> Comprometidos con el desarrollo de nuestra
+                            comunidad, creando
+                            alianzas para un entorno más justo.</li>
+                        <li class="hidden"><strong>Ambiental:</strong> Implementamos prácticas sostenibles para
+                            minimizar nuestra
+                            huella ecológica y construir un futuro más verde.</li>
+                    </ul>
+                    <p class="hidden">En <strong>SEGHER</strong>, no solo entregamos paquetes, entregamos soluciones que
+                        benefician a
+                        todos.</p>
                 </div>
-                <div class="izquierda">
-                    <img src="./imagenes/vehiculo.jpg" alt="foto4" class="imagen-izquierda" width="450" height="310">
-                    <div>
-                        <h3>Nuestro compromiso con lo humano, lo social y el ambiente</h3>
-                        <p>En <strong>SEGHER</strong>, el éxito empresarial va de la mano con la responsabilidad social
-                            y ambiental. Nos
-                            esforzamos por construir una empresa que refleje los valores de nuestra comunidad:
-                            Humano: Valoramos a nuestro equipo y clientes, fomentando un ambiente inclusivo y
-                            respetuoso.
-                            Nos
-                            preocupamos por tu bienestar y buscamos superar tus expectativas.
-                            Social: Estamos comprometidos con el desarrollo de nuestra comunidad, buscando alianzas para
-                            generar
-                            oportunidades y contribuir a un entorno más justo.
-                            Ambiental: Nos preocupamos por el impacto ambiental de nuestras operaciones. Implementamos
-                            prácticas
-                            sostenibles para minimizar nuestra huella ecológica y construir un futuro más verde.
-                            En <strong>SEGHER</strong>, no solo entregamos paquetes, entregamos soluciones que
-                            benefician a todos.</p>
-                    </div>
+                <img src="/imagenes/vehiculo.jpg" alt="Vehículo en el campo" class="imagen hidden">
+            </article>
+
+            <article class="bloque bloque-imagen-izquierda">
+                <img src="/imagenes/manos.jpg" alt="Manos en unión" class="imagen hidden">
+                <div class="contenido">
+                    <h3 class="hidden">Únete a la familia SEGHER</h3>
+                    <p>En <strong>SEGHER</strong>, no solo entregamos paquetes, entregamos soluciones. Te invitamos a
+                        formar parte de nuestra familia y a descubrir una nueva forma de entender la logística, donde la
+                        eficiencia se une a la calidez humana y el compromiso social.</p>
                 </div>
-                <div class="derecha">
-                    <img src="./imagenes/manos.jpg" alt="foto5" class="imagen-derecha" width="450" height="310">
-                    <div>
-                        <h3>Únete a la familia SEGHER</h3>
-                        <p>En <strong>SEGHER</strong>, no solo entregamos paquetes, entregamos soluciones. Te invitamos
-                            a formar parte de
-                            nuestra
-                            familia y a descubrir una nueva forma de entender la logística, donde la eficiencia se une a
-                            la
-                            calidez humana y el compromiso social.</p>
-                    </div>
-                </div>
-                <h2 class="juntos">¡Juntos, hagamos de nuestra Ciudad un lugar mejor!</h2>
-            </div>
+            </article>
+
+            <h2 class="juntos hidden">¡Juntos, hagamos de nuestra ciudad un lugar mejor!</h2>
         </section>
 
+        <!--SEPRADOR-->
+        <div>
+            <div class="separador"></div>
+        </div>
+
+        <section class="servicios">
+            <h2 id="servicios" class="hidden">Servicios</h2>
+
+            <div class="servicio servicio-curier">
+                <div class="contenido">
+                    <h3 class="hidden">Servicio Courier</h3>
+                    <h3 class="hidden">Condiciones</h3>
+                    <ul>
+                        <li class="hidden">La hora de recogida de paquetes es a partir de las 7:30 am.</li>
+                        <li class="hidden">Se puede programar los envíos hasta las 9:00 pm. del día anterior.</li>
+                        <li class="hidden">El servicio <b>Express</b> se solicitará hasta las 12:00 pm.</li>
+                        <li class="hidden">El paquete se debe encontrar debidamente sellado, rotulado y embalado.</li>
+                        <li class="hidden">Se considera peso bruto o peso volumétrico (el mayor) multiplicando las
+                            dimensiones (alto,
+                            ancho y largo) y dividiendo entre 5000.</li>
+                        <li class="hidden">El peso máximo del paquete no debe exceder los 25 kilos.</li>
+                        <li class="hidden">Una vez entregado el paquete se enviará la evidencia de la confirmación de
+                            entrega.</li>
+                        <li class="hidden">El tiempo máximo de espera es de 10 minutos.</li>
+                        <li class="hidden">Se cobrará S/. 5.00 Soles por la <b>reprogramación o devolución</b> del
+                            paquete.</li>
+                    </ul>
+
+                    <h3 class="hidden">Requisitos</h3>
+                    <h4 class="hidden">Persona Natural</h4>
+                    <ul>
+                        <li class="hidden">Copia de DNI.</li>
+                        <li class="hidden">Formato de declaración jurada.</li>
+                    </ul>
+                    <h4 class="hidden">Persona Jurídica</h4>
+                    <ul>
+                        <li class="hidden">Ficha RUC.</li>
+                        <li class="hidden">Guía de remisión.</li>
+                        <li class="hidden">Formato de declaración jurada.</li>
+                    </ul>
+
+                    <h3 class="hidden">Restricciones</h3>
+                    <ul>
+                        <li class="hidden">Prohibido enviar material inflamable o explosivos.</li>
+                        <li class="hidden">Especies animales en caja, jaula o en algún tipo de contenedor.</li>
+                        <li class="hidden">Productos que requieran calefacción y/o refrigeración.</li>
+                        <li class="hidden">Narcóticos y/o estupefacientes; armas, municiones.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servicio servicio-terminal">
+                <div class="contenido">
+                    <h3 class="hidden">Servicio Terminal</h3>
+                    <h3 class="hidden">Condiciones</h3>
+                    <ul>
+                        <li class="hidden">La hora de recogida de paquetes es a partir de las 7:30 am.</li>
+                        <li class="hidden">Se puede programar los envíos hasta las 9:00 pm. del día anterior.</li>
+                        <li class="hidden">El servicio <b>Express</b> se solicitará hasta las 12:00 pm.</li>
+                        <li class="hidden">El paquete se debe encontrar debidamente sellado, rotulado y embalado.</li>
+                        <li class="hidden">Se considera peso bruto o peso volumétrico (el mayor) multiplicando las
+                            dimensiones (alto,
+                            ancho y largo) y dividiendo entre 5000.</li>
+                        <li class="hidden">El peso máximo del paquete no debe exceder los 25 kilos.</li>
+                        <li class="hidden">Se realizará la entrega de paquetes en las terminales de 4:00 pm. a 7:00 pm.
+                        </li>
+                        <li class="hidden">Una vez entregado el paquete se enviará la evidencia de la confirmación de
+                            entrega.</li>
+                        <li class="hidden">El tiempo máximo de espera es de 10 minutos.</li>
+                        <li class="hidden">Se cobrará S/. 5.00 Soles por la <b>reprogramación o devolución</b> del
+                            paquete.</li>
+                    </ul>
+
+                    <h3 class="hidden">Requisitos</h3>
+                    <h4 class="hidden">Persona Natural</h4>
+                    <ul>
+                        <li class="hidden">Copia de DNI.</li>
+                        <li class="hidden">Formato de declaración jurada.</li>
+                    </ul>
+                    <h4 class="hidden">Persona Jurídica</h4>
+                    <ul>
+                        <li class="hidden">Ficha RUC.</li>
+                        <li class="hidden">Guía de remisión.</li>
+                        <li class="hidden">Formato de declaración jurada.</li>
+                    </ul>
+
+                    <h3 class="hidden">Restricciones</h3>
+                    <ul>
+                        <li class="hidden">Prohibido enviar material inflamable o explosivos.</li>
+                        <li class="hidden">Especies animales en caja, jaula o en algún tipo de contenedor.</li>
+                        <li class="hidden">Productos que requieran calefacción y/o refrigeración.</li>
+                        <li class="hidden">Narcóticos y/o estupefacientes; armas, municiones.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!--FOOTER-->
     <footer>
-        <h2 class="contactanos" id="contactanos">Contactanos</h2>
+        <h2 id="contactanos">Contactanos</h2>
+
         <div class="icons">
-            <img src="./imagenes/whatsapp_icon.png" alt="Whatsapp" width="50" height="50">
-            <img src="./imagenes/correo-icon.png" alt="Correo" width="50" height="50">
-            <img src="./imagenes/facebook_icon.png" alt="Facebook" width="50" height="50">
-            <img src="./imagenes/instagram-icon.png" alt="Instagram" width="50" height="50">
-            <img src="./imagenes/linkedin_icon.png" alt="Linkedin" width="50" height="50">
-            <img src="./imagenes/ubicacion-icon.png" alt="Ubicacion" width="50" height="50">
-        </div>
-        <div class="contacto">
-            <img src="./imagenes/whatsapp_contac.png" alt="Contactanos" width="60" height="60">
-            <p class="contacto-num">+51 923223259</p>
+            <a href="https://wa.me/51923223259" target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/whatsapp_icon.png" alt="Whatsapp" width="45" height="45"></a>
+
+            <a href="correo.html">
+                <img src="/imagenes/correo-icon.png" alt="Correo" width="45" height="45" id="iconoCorreo"></a>
+
+            <a href="https://www.facebook.com/profile.php?id=61567175664902" target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/facebook_icon.png" alt="Facebook" width="45" height="45"></a>
+
+            <a href="https://www.instagram.com/segherexpress/" target="_blank" rel="noopener noreferrer">  
+            <img src="/imagenes/instagram-icon.png" alt="Instagram" width="45" height="45"></a>  
+
+            <img src="/imagenes/linkedin_icon.png" alt="Linkedin" width="45" height="45">
+            
+            <a href="https://www.google.com/maps?q=-12.165858,-76.995403(Calle+Poseidon+Mz+A9+Lot+12+Urb+Sagitario+Surco+-+SEGHER)"
+                target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/ubicacion-icon.png" alt="Ubicacion" width="45" height="45"></a>
         </div>
         <div>
-            <img src="./imagenes/whatsapp_contac.png" alt="Flotante" width="65" height="65" class="flotante">
+            <a href="https://wa.me/51923223259" target="_blank" rel="noopener noreferrer">
+                <img src="/imagenes/whatsapp_contac.png" alt="Flotante" width="65" height="65" class="flotante"></a>
+
+                <button class="compartir" onclick="compartir()">Compartir</button>
         </div>
         <p class="copy">&copy; SEGHER 2025</p>
     </footer>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
 
-<script src="./index.js"></script>
