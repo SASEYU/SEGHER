@@ -290,3 +290,76 @@ footer {
     font-size: 10px;
 }
 
+
+/*RESPONSIVO*/
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content: space-between; /* Espacia el logo y el menú */
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 120px; /* Ajusta el tamaño según necesidad */
+        height: auto;
+    }
+
+    .menu-toggle {
+        font-size: 26px;
+        cursor: pointer;
+        display: flex;
+        justify-content: right;
+    }
+
+    .menu-lista {
+        width: 40%;
+        position: absolute;
+        top: 70px; /* Ajusta según la altura del nav */
+        right: 0;
+        font-size: 18px;
+        background-color: #fff;
+        text-align: center;
+        display: none; /* Oculto por defecto */
+        padding: 5px 10px; /* Reduce el padding para compactar */
+        white-space: nowrap; /* Evita saltos de línea en los elementos */
+    }
+
+    .menu-lista.active {
+        display: block; /* Mostrar cuando se active */
+    }
+
+    .menu-lista li {
+        width: 100%;
+        padding: 10px 0;
+        display: inline-block; /* Alinea los elementos en una sola línea */
+        margin: 0 5px; /* Espaciado entre elementos */
+        padding: 5px 0;
+    }
+
+        .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    
+        .form-container {
+        width: 90%; /* Se reduce el ancho para mejor adaptación */
+        max-width: 400px; /* Evita que se haga demasiado grande */
+        padding: 15px;
+    }
+    
+        input, select, textarea {
+        width: 100%; /* Asegura que los elementos del formulario ocupen todo el ancho */
+        font-size: 14px; /* Reduce un poco el tamaño de la fuente para mejor legibilidad */
+    }
+    
+        button {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+    
+    }
+
+
